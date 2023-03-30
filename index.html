@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>STOPWATCH</title>
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+
+<!-- body contents -->
+
+    <body>
+        <div id="container">
+            <h1>STOPWATCH</h1>
+            <div id="timer-area">
+                <img alt="Timer/Cronômetro" src="img/timer.png">
+                <input type="button" id="startTimer" value="start" onclick="startTimer()">
+                <input type="button" id="pauseTimer" value="Pause" onclick="pauseTimer()" disabled>
+                <input type="button" id="continueTimer" value="Continue" onclick="startTimer()" disabled>
+                <input type="button" id="restartTimer" value="Reset" onclick="restartTimer()" disabled>
+
+                <!-- timer text -->
+
+                <p id="timer-text">
+                    <span id="Hours">00</span>
+                    <span id="Minutes">:00</span>
+                    <span id="Seconds">:00</span>
+                    <span id="Milliseconds">:00</span>
+                </p>
+
+            </div>
+        </div>
+
+ <!-- script -->
+
+       <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
